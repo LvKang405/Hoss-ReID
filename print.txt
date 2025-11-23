@@ -1,0 +1,920 @@
+# 1. 提取文件名（去掉路径）："0001_001.jpg"
+filename = os.path.basename(img_path)
+# 2. 从文件名中提取数字（根据你的文件名格式截取，比如按 "_" 分割）
+pid_str = filename.split("_")[0]  # 得到 "0001"
+
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0318_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0318_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0318_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0319_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0319_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0319_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0319_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0319_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0320_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0320_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0320_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0320_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0320_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0322_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0322_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0322_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0322_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0322_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0323_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0323_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0323_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0323_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0323_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0324_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0324_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0324_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0324_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0324_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0326_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0326_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0326_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0326_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0326_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0327_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0327_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0327_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0327_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0327_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0329_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0329_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0329_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0329_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0329_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0331_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0331_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0331_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0331_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0331_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0333_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0333_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0334_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0334_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0334_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0334_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0334_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0335_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0335_s02c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0335_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0335_s02c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0335_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0336_s02c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0336_s02c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0336_s02c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0401_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0401_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0401_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0401_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0401_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0403_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0403_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0403_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0403_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0403_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0404_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0404_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0404_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0404_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0404_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0405_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0405_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0405_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0405_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0405_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0406_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0406_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0406_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0406_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0406_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0407_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0407_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0407_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0407_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0407_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0409_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0409_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0409_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0409_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0409_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0410_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0410_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0410_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0410_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0410_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0411_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0411_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0411_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0412_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0412_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0412_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0412_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0412_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0414_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0414_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0414_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0414_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0414_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0415_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0415_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0415_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0415_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0415_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0416_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0416_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0416_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0416_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0416_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0417_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0417_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0417_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0417_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0417_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0418_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0418_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0418_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0418_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0418_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0419_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0419_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0419_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0419_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0419_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0420_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0420_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0420_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0420_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0420_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0421_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0421_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0421_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0421_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0421_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0422_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0422_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0422_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0422_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0422_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0423_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0423_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0423_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0423_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0423_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0424_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0424_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0424_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0424_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0424_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0425_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0425_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0425_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0425_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0425_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0426_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0426_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0426_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0426_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0426_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0427_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0427_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0427_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0427_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0427_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0428_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0428_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0428_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0428_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0428_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0430_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0430_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0430_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0430_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0430_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0431_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0431_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0431_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0431_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0431_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0432_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0432_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0432_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0432_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0432_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0434_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0434_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0434_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0434_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0434_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0435_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0435_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0435_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0435_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0435_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0436_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0436_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0436_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0436_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0436_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0437_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0437_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0437_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0437_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0437_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0438_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0438_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0438_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0438_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0438_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0439_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0439_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0439_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0439_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0439_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0440_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0440_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0440_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0440_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0440_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0443_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0443_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0443_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0443_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0443_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0445_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0445_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0445_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0445_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0445_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0446_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0446_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0446_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0446_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0446_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0447_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0447_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0447_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0447_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0447_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0448_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0448_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0448_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0448_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0448_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0449_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0449_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0449_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0449_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0449_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0450_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0450_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0450_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0451_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0451_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0451_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0452_s03c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0452_s03c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0452_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0452_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0452_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0454_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0454_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0454_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0455_s03c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0455_s03c4_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0455_s03c5_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0501_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0501_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0504_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0504_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0504_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0505_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0505_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0505_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0506_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0506_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0506_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0507_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0507_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0507_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0508_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0508_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0508_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0509_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0509_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0509_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0511_s06c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0511_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0511_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0511_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0512_s06c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0512_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0512_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0512_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0513_s06c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0513_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0513_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0513_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0514_s06c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0514_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0514_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0514_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0515_s06c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0515_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0515_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0515_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0516_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0516_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0516_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0517_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0517_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0517_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0518_s06c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0518_s06c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0518_s06c4_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0602_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0602_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0603_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0603_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0604_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0604_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0606_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0606_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0608_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0608_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0609_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0609_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0610_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0610_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0611_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0611_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0613_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0613_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0614_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0614_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0615_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0615_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0616_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0616_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0617_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0617_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0618_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0618_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0619_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0619_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0620_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0620_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0622_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0622_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0624_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0624_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0625_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0625_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0626_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0626_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0627_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0627_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0628_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0628_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0629_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0629_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0632_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0632_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0633_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0633_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0636_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0636_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0637_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0637_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0638_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0638_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0639_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0639_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0640_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0640_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0641_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0641_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0642_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0642_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0643_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0643_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0644_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0644_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0645_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0645_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0646_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0646_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0647_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0647_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0648_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0648_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0649_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0649_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0650_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0650_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0653_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0653_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0654_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0654_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0655_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0655_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0656_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0656_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0657_s07c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0657_s07c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0701_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0701_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0702_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0702_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0703_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0703_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0704_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0704_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0705_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0705_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0706_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0706_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0707_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0707_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0708_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0708_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0709_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0709_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0710_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0710_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0713_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0713_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0714_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0714_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0716_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0716_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0717_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0717_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0720_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0720_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0721_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0721_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0722_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0722_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0723_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0723_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0724_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0724_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0725_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0725_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0726_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0726_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0727_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0727_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0728_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0728_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0729_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0729_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0730_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0730_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0731_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0731_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0732_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0732_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0733_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0733_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0734_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0734_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0735_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0735_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0738_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0738_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0739_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0739_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0740_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0740_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0741_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0741_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0742_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0742_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0743_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0743_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0744_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0744_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0745_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0745_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0746_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0746_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0747_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0747_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0748_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0748_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0750_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0750_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0751_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0751_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0752_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0752_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0755_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0755_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0756_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0756_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0757_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0757_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0758_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0758_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0759_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0759_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0760_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0760_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0761_s08c1_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0761_s08c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0801_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0801_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0802_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0802_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0803_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0803_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0805_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0805_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0806_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0806_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0806_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0807_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0807_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0807_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0808_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0808_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0808_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0809_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0809_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0809_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0810_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0810_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0810_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0811_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0811_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0811_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0812_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0812_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0812_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0813_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0813_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0813_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0814_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0814_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0814_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0815_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0815_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0815_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0816_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0816_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0816_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0817_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0817_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0817_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0818_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0818_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0818_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0819_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0819_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0819_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0823_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0823_s09c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0827_s09c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0827_s09c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0901_s10c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0901_s10c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0901_s10c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0904_s10c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0904_s10c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0904_s10c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0906_s10c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0906_s10c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0907_s10c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\0907_s10c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1001_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1001_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1002_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1002_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1003_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1003_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1003_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1005_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1005_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1005_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1006_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1006_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1006_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1007_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1007_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1007_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1012_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1012_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1012_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1013_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1013_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1013_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1014_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1014_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1015_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1015_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1015_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1016_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1016_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1016_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1017_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1017_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1017_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1018_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1018_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1018_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1019_s11c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1019_s11c2_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1019_s11c3_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1101_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1101_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1102_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1102_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1103_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1103_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1104_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1104_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1105_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1105_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1106_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1106_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1107_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1107_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1108_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1108_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1109_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1109_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1110_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1110_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1111_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1111_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1111_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1112_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1112_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1112_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1113_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1113_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1114_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1114_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1115_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1115_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1116_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1116_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1117_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1117_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1118_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1118_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1119_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1119_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1120_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1120_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1121_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1121_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1121_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1122_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1122_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1123_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1123_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1124_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1124_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1125_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1125_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1126_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1126_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1126_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1127_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1127_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1127_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1129_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1129_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1129_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1130_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1130_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1130_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1131_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1131_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1131_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1132_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1132_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1132_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1133_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1133_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1133_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1134_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1134_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1134_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1138_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1138_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1138_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1139_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1139_s12c2_SAR.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1140_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1140_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1141_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1141_s12c3_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1142_s12c1_RGB.tif
+img_path=d:\Work\Code\Hoss-ReID\data\HOSS\bounding_box_train\1142_s12c3_RGB.tif
+=> HOSS ReID Dataset loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   361 |     1063 |         2
+  query    |   176 |      176 |         2
+  gallery  |   177 |      593 |         2
+  ----------------------------------------
+Number of RGB-SAR pair: 690
+  ----------------------------------------
+using softmax sampler
+using Transformer_type: vit_base_patch16_224_TransOSS as a backbone
+using stride: [16, 16], and patch number is num_y16 * num_x8
+using stride: [16, 16], and patch number is num_y16 * num_x8
+using drop_out rate is : 0.0
+using attn_drop_out rate is : 0.0
+using drop_path rate is : 0.1
+TransOSS->load_param(():load pretrained model from weights/vit_base_p16_224-4e355ebd.pth
+Resized position embedding from size:torch.Size([1, 197, 768]) to size: torch.Size([1, 129, 768]) with height:16 width: 8
+patch_embed_SAR not in the pth
+Loading pretrained model......from weights/vit_base_p16_224-4e355ebd.pth
+===========building transformer===========
+using triplet loss with margin:0.3
+2025-11-08 14:03:07,581 transreid.train INFO: start training
+2025-11-08 14:03:33,045 transreid.train INFO: Epoch 1 done. Time per batch: 1.492[s] Speed: 42.9[samples/s]
+2025-11-08 14:03:57,234 transreid.train INFO: Epoch 2 done. Time per batch: 1.423[s] Speed: 45.0[samples/s]
+2025-11-08 14:04:21,121 transreid.train INFO: Epoch 3 done. Time per batch: 1.405[s] Speed: 45.5[samples/s]
+2025-11-08 14:04:45,167 transreid.train INFO: Epoch 4 done. Time per batch: 1.414[s] Speed: 45.2[samples/s]
+2025-11-08 14:05:08,800 transreid.train INFO: Epoch 5 done. Time per batch: 1.390[s] Speed: 46.0[samples/s]
+2025-11-08 14:05:32,470 transreid.train INFO: Epoch 6 done. Time per batch: 1.392[s] Speed: 46.0[samples/s]
+2025-11-08 14:05:56,568 transreid.train INFO: Epoch 7 done. Time per batch: 1.417[s] Speed: 45.2[samples/s]
+2025-11-08 14:06:20,320 transreid.train INFO: Epoch 8 done. Time per batch: 1.397[s] Speed: 45.8[samples/s]
+2025-11-08 14:06:44,041 transreid.train INFO: Epoch 9 done. Time per batch: 1.395[s] Speed: 45.9[samples/s]
+2025-11-08 14:07:07,241 transreid.train INFO: Epoch 10 done. Time per batch: 1.365[s] Speed: 46.9[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+d:\Work\Code\Hoss-ReID\utils\metrics.py:12: UserWarning: This overload of addmm_ is deprecated:
+        addmm_(Number beta, Number alpha, Tensor mat1, Tensor mat2)
+Consider using one of the following signatures instead:
+        addmm_(Tensor mat1, Tensor mat2, *, Number beta = 1, Number alpha = 1) (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\python_arg_parser.cpp:1691.)
+  dist_mat.addmm_(1, -2, qf, gf.t())
+2025-11-08 14:07:30,431 transreid.train INFO: Validation Results - Epoch: 10
+2025-11-08 14:07:30,431 transreid.train INFO: mAP: 36.5%
+2025-11-08 14:07:30,431 transreid.train INFO: CMC curve, Rank-1  :46.0%
+2025-11-08 14:07:30,431 transreid.train INFO: CMC curve, Rank-5  :61.4%
+2025-11-08 14:07:30,432 transreid.train INFO: CMC curve, Rank-10 :64.8%
+2025-11-08 14:07:53,716 transreid.train INFO: Epoch 11 done. Time per batch: 1.370[s] Speed: 46.7[samples/s]
+2025-11-08 14:08:16,914 transreid.train INFO: Epoch 12 done. Time per batch: 1.365[s] Speed: 46.9[samples/s]
+2025-11-08 14:08:39,922 transreid.train INFO: Epoch 13 done. Time per batch: 1.353[s] Speed: 47.3[samples/s]
+2025-11-08 14:09:03,222 transreid.train INFO: Epoch 14 done. Time per batch: 1.371[s] Speed: 46.7[samples/s]
+2025-11-08 14:09:26,597 transreid.train INFO: Epoch 15 done. Time per batch: 1.375[s] Speed: 46.5[samples/s]
+2025-11-08 14:09:49,654 transreid.train INFO: Epoch 16 done. Time per batch: 1.356[s] Speed: 47.2[samples/s]
+2025-11-08 14:10:12,539 transreid.train INFO: Epoch 17 done. Time per batch: 1.346[s] Speed: 47.5[samples/s]
+2025-11-08 14:10:35,812 transreid.train INFO: Epoch 18 done. Time per batch: 1.369[s] Speed: 46.8[samples/s]
+2025-11-08 14:10:58,962 transreid.train INFO: Epoch 19 done. Time per batch: 1.362[s] Speed: 47.0[samples/s]
+2025-11-08 14:11:22,132 transreid.train INFO: Epoch 20 done. Time per batch: 1.363[s] Speed: 47.0[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+2025-11-08 14:11:43,730 transreid.train INFO: Validation Results - Epoch: 20
+2025-11-08 14:11:43,730 transreid.train INFO: mAP: 42.9%
+2025-11-08 14:11:43,730 transreid.train INFO: CMC curve, Rank-1  :55.1%
+2025-11-08 14:11:43,731 transreid.train INFO: CMC curve, Rank-5  :66.5%
+2025-11-08 14:11:43,731 transreid.train INFO: CMC curve, Rank-10 :68.8%
+2025-11-08 14:12:06,919 transreid.train INFO: Epoch 21 done. Time per batch: 1.360[s] Speed: 47.0[samples/s]
+2025-11-08 14:12:29,728 transreid.train INFO: Epoch 22 done. Time per batch: 1.342[s] Speed: 47.7[samples/s]
+2025-11-08 14:12:52,867 transreid.train INFO: Epoch 23 done. Time per batch: 1.361[s] Speed: 47.0[samples/s]
+2025-11-08 14:13:20,061 transreid.train INFO: Epoch 24 done. Time per batch: 1.600[s] Speed: 40.0[samples/s]
+2025-11-08 14:13:46,024 transreid.train INFO: Epoch 25 done. Time per batch: 1.527[s] Speed: 41.9[samples/s]
+2025-11-08 14:14:12,588 transreid.train INFO: Epoch 26 done. Time per batch: 1.563[s] Speed: 41.0[samples/s]
+2025-11-08 14:14:40,202 transreid.train INFO: Epoch 27 done. Time per batch: 1.624[s] Speed: 39.4[samples/s]
+2025-11-08 14:15:03,904 transreid.train INFO: Epoch 28 done. Time per batch: 1.394[s] Speed: 45.9[samples/s]
+2025-11-08 14:15:27,428 transreid.train INFO: Epoch 29 done. Time per batch: 1.384[s] Speed: 46.2[samples/s]
+2025-11-08 14:15:50,569 transreid.train INFO: Epoch 30 done. Time per batch: 1.361[s] Speed: 47.0[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+2025-11-08 14:16:12,566 transreid.train INFO: Validation Results - Epoch: 30
+2025-11-08 14:16:12,566 transreid.train INFO: mAP: 43.9%
+2025-11-08 14:16:12,566 transreid.train INFO: CMC curve, Rank-1  :59.1%
+2025-11-08 14:16:12,567 transreid.train INFO: CMC curve, Rank-5  :64.8%
+2025-11-08 14:16:12,567 transreid.train INFO: CMC curve, Rank-10 :68.8%
+2025-11-08 14:16:36,074 transreid.train INFO: Epoch 31 done. Time per batch: 1.379[s] Speed: 46.4[samples/s]
+2025-11-08 14:16:59,410 transreid.train INFO: Epoch 32 done. Time per batch: 1.373[s] Speed: 46.6[samples/s]
+2025-11-08 14:17:22,772 transreid.train INFO: Epoch 33 done. Time per batch: 1.374[s] Speed: 46.6[samples/s]
+2025-11-08 14:17:46,227 transreid.train INFO: Epoch 34 done. Time per batch: 1.380[s] Speed: 46.4[samples/s]
+2025-11-08 14:18:09,560 transreid.train INFO: Epoch 35 done. Time per batch: 1.373[s] Speed: 46.6[samples/s]
+2025-11-08 14:18:32,479 transreid.train INFO: Epoch 36 done. Time per batch: 1.348[s] Speed: 47.5[samples/s]
+2025-11-08 14:18:55,857 transreid.train INFO: Epoch 37 done. Time per batch: 1.375[s] Speed: 46.5[samples/s]
+2025-11-08 14:19:19,231 transreid.train INFO: Epoch 38 done. Time per batch: 1.375[s] Speed: 46.5[samples/s]
+2025-11-08 14:19:42,405 transreid.train INFO: Epoch 39 done. Time per batch: 1.363[s] Speed: 47.0[samples/s]
+2025-11-08 14:20:05,460 transreid.train INFO: Epoch 40 done. Time per batch: 1.356[s] Speed: 47.2[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+2025-11-08 14:20:27,148 transreid.train INFO: Validation Results - Epoch: 40
+2025-11-08 14:20:27,148 transreid.train INFO: mAP: 42.9%
+2025-11-08 14:20:27,148 transreid.train INFO: CMC curve, Rank-1  :55.1%
+2025-11-08 14:20:27,148 transreid.train INFO: CMC curve, Rank-5  :66.5%
+2025-11-08 14:20:27,148 transreid.train INFO: CMC curve, Rank-10 :69.3%
+2025-11-08 14:20:50,635 transreid.train INFO: Epoch 41 done. Time per batch: 1.378[s] Speed: 46.4[samples/s]
+2025-11-08 14:21:13,860 transreid.train INFO: Epoch 42 done. Time per batch: 1.366[s] Speed: 46.8[samples/s]
+2025-11-08 14:21:36,948 transreid.train INFO: Epoch 43 done. Time per batch: 1.358[s] Speed: 47.1[samples/s]
+2025-11-08 14:22:00,359 transreid.train INFO: Epoch 44 done. Time per batch: 1.377[s] Speed: 46.5[samples/s]
+2025-11-08 14:22:23,364 transreid.train INFO: Epoch 45 done. Time per batch: 1.353[s] Speed: 47.3[samples/s]
+2025-11-08 14:22:46,536 transreid.train INFO: Epoch 46 done. Time per batch: 1.363[s] Speed: 47.0[samples/s]
+2025-11-08 14:23:11,026 transreid.train INFO: Epoch 47 done. Time per batch: 1.441[s] Speed: 44.4[samples/s]
+2025-11-08 14:23:34,667 transreid.train INFO: Epoch 48 done. Time per batch: 1.391[s] Speed: 46.0[samples/s]
+2025-11-08 14:23:57,892 transreid.train INFO: Epoch 49 done. Time per batch: 1.366[s] Speed: 46.8[samples/s]
+2025-11-08 14:24:21,269 transreid.train INFO: Epoch 50 done. Time per batch: 1.375[s] Speed: 46.5[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+2025-11-08 14:24:43,083 transreid.train INFO: Validation Results - Epoch: 50
+2025-11-08 14:24:43,083 transreid.train INFO: mAP: 43.8%
+2025-11-08 14:24:43,083 transreid.train INFO: CMC curve, Rank-1  :56.2%
+2025-11-08 14:24:43,083 transreid.train INFO: CMC curve, Rank-5  :66.5%
+2025-11-08 14:24:43,083 transreid.train INFO: CMC curve, Rank-10 :69.9%
+2025-11-08 14:25:06,202 transreid.train INFO: Epoch 51 done. Time per batch: 1.356[s] Speed: 47.2[samples/s]
+2025-11-08 14:25:29,364 transreid.train INFO: Epoch 52 done. Time per batch: 1.362[s] Speed: 47.0[samples/s]
+2025-11-08 14:25:52,835 transreid.train INFO: Epoch 53 done. Time per batch: 1.381[s] Speed: 46.4[samples/s]
+2025-11-08 14:26:15,969 transreid.train INFO: Epoch 54 done. Time per batch: 1.361[s] Speed: 47.0[samples/s]
+2025-11-08 14:26:39,385 transreid.train INFO: Epoch 55 done. Time per batch: 1.377[s] Speed: 46.5[samples/s]
+2025-11-08 14:27:02,624 transreid.train INFO: Epoch 56 done. Time per batch: 1.367[s] Speed: 46.8[samples/s]
+2025-11-08 14:27:25,928 transreid.train INFO: Epoch 57 done. Time per batch: 1.371[s] Speed: 46.7[samples/s]
+2025-11-08 14:27:49,262 transreid.train INFO: Epoch 58 done. Time per batch: 1.373[s] Speed: 46.6[samples/s]
+2025-11-08 14:28:12,373 transreid.train INFO: Epoch 59 done. Time per batch: 1.359[s] Speed: 47.1[samples/s]
+2025-11-08 14:28:35,707 transreid.train INFO: Epoch 60 done. Time per batch: 1.373[s] Speed: 46.6[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+2025-11-08 14:28:57,473 transreid.train INFO: Validation Results - Epoch: 60
+2025-11-08 14:28:57,474 transreid.train INFO: mAP: 44.1%
+2025-11-08 14:28:57,474 transreid.train INFO: CMC curve, Rank-1  :56.8%
+2025-11-08 14:28:57,474 transreid.train INFO: CMC curve, Rank-5  :67.0%
+2025-11-08 14:28:57,474 transreid.train INFO: CMC curve, Rank-10 :72.7%
+2025-11-08 14:29:21,650 transreid.train INFO: Epoch 61 done. Time per batch: 1.418[s] Speed: 45.1[samples/s]
+2025-11-08 14:29:46,561 transreid.train INFO: Epoch 62 done. Time per batch: 1.465[s] Speed: 43.7[samples/s]
+2025-11-08 14:30:11,820 transreid.train INFO: Epoch 63 done. Time per batch: 1.486[s] Speed: 43.1[samples/s]
+2025-11-08 14:30:36,704 transreid.train INFO: Epoch 64 done. Time per batch: 1.464[s] Speed: 43.7[samples/s]
+2025-11-08 14:31:01,925 transreid.train INFO: Epoch 65 done. Time per batch: 1.483[s] Speed: 43.1[samples/s]
+2025-11-08 14:31:26,900 transreid.train INFO: Epoch 66 done. Time per batch: 1.469[s] Speed: 43.6[samples/s]
+2025-11-08 14:31:51,836 transreid.train INFO: Epoch 67 done. Time per batch: 1.467[s] Speed: 43.6[samples/s]
+2025-11-08 14:32:16,868 transreid.train INFO: Epoch 68 done. Time per batch: 1.472[s] Speed: 43.5[samples/s]
+2025-11-08 14:32:41,900 transreid.train INFO: Epoch 69 done. Time per batch: 1.472[s] Speed: 43.5[samples/s]
+2025-11-08 14:33:07,118 transreid.train INFO: Epoch 70 done. Time per batch: 1.483[s] Speed: 43.1[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+2025-11-08 14:33:30,845 transreid.train INFO: Validation Results - Epoch: 70
+2025-11-08 14:33:30,845 transreid.train INFO: mAP: 44.3%
+2025-11-08 14:33:30,846 transreid.train INFO: CMC curve, Rank-1  :57.4%
+2025-11-08 14:33:30,846 transreid.train INFO: CMC curve, Rank-5  :67.6%
+2025-11-08 14:33:30,846 transreid.train INFO: CMC curve, Rank-10 :72.7%
+2025-11-08 14:33:56,590 transreid.train INFO: Epoch 71 done. Time per batch: 1.511[s] Speed: 42.3[samples/s]
+2025-11-08 14:34:21,934 transreid.train INFO: Epoch 72 done. Time per batch: 1.491[s] Speed: 42.9[samples/s]
+2025-11-08 14:34:47,460 transreid.train INFO: Epoch 73 done. Time per batch: 1.501[s] Speed: 42.6[samples/s]
+2025-11-08 14:35:12,437 transreid.train INFO: Epoch 74 done. Time per batch: 1.469[s] Speed: 43.6[samples/s]
+2025-11-08 14:35:37,512 transreid.train INFO: Epoch 75 done. Time per batch: 1.475[s] Speed: 43.4[samples/s]
+2025-11-08 14:36:02,623 transreid.train INFO: Epoch 76 done. Time per batch: 1.477[s] Speed: 43.3[samples/s]
+2025-11-08 14:36:28,025 transreid.train INFO: Epoch 77 done. Time per batch: 1.494[s] Speed: 42.8[samples/s]
+2025-11-08 14:36:53,415 transreid.train INFO: Epoch 78 done. Time per batch: 1.494[s] Speed: 42.9[samples/s]
+2025-11-08 14:37:18,686 transreid.train INFO: Epoch 79 done. Time per batch: 1.486[s] Speed: 43.1[samples/s]
+2025-11-08 14:37:43,771 transreid.train INFO: Epoch 80 done. Time per batch: 1.476[s] Speed: 43.4[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+2025-11-08 14:38:07,501 transreid.train INFO: Validation Results - Epoch: 80
+2025-11-08 14:38:07,501 transreid.train INFO: mAP: 44.2%
+2025-11-08 14:38:07,501 transreid.train INFO: CMC curve, Rank-1  :57.4%
+2025-11-08 14:38:07,501 transreid.train INFO: CMC curve, Rank-5  :67.6%
+2025-11-08 14:38:07,501 transreid.train INFO: CMC curve, Rank-10 :71.6%
+2025-11-08 14:38:32,922 transreid.train INFO: Epoch 81 done. Time per batch: 1.492[s] Speed: 42.9[samples/s]
+2025-11-08 14:38:58,336 transreid.train INFO: Epoch 82 done. Time per batch: 1.495[s] Speed: 42.8[samples/s]
+2025-11-08 14:39:23,451 transreid.train INFO: Epoch 83 done. Time per batch: 1.477[s] Speed: 43.3[samples/s]
+2025-11-08 14:39:48,949 transreid.train INFO: Epoch 84 done. Time per batch: 1.500[s] Speed: 42.7[samples/s]
+2025-11-08 14:40:13,933 transreid.train INFO: Epoch 85 done. Time per batch: 1.470[s] Speed: 43.5[samples/s]
+2025-11-08 14:40:39,181 transreid.train INFO: Epoch 86 done. Time per batch: 1.485[s] Speed: 43.1[samples/s]
+2025-11-08 14:41:04,560 transreid.train INFO: Epoch 87 done. Time per batch: 1.493[s] Speed: 42.9[samples/s]
+2025-11-08 14:41:30,051 transreid.train INFO: Epoch 88 done. Time per batch: 1.499[s] Speed: 42.7[samples/s]
+2025-11-08 14:41:55,492 transreid.train INFO: Epoch 89 done. Time per batch: 1.496[s] Speed: 42.8[samples/s]
+2025-11-08 14:42:20,941 transreid.train INFO: Epoch 90 done. Time per batch: 1.497[s] Speed: 42.8[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+2025-11-08 14:42:44,970 transreid.train INFO: Validation Results - Epoch: 90
+2025-11-08 14:42:44,970 transreid.train INFO: mAP: 44.6%
+2025-11-08 14:42:44,971 transreid.train INFO: CMC curve, Rank-1  :56.8%
+2025-11-08 14:42:44,971 transreid.train INFO: CMC curve, Rank-5  :67.0%
+2025-11-08 14:42:44,971 transreid.train INFO: CMC curve, Rank-10 :71.6%
+2025-11-08 14:43:10,557 transreid.train INFO: Epoch 91 done. Time per batch: 1.501[s] Speed: 42.6[samples/s]
+2025-11-08 14:43:35,910 transreid.train INFO: Epoch 92 done. Time per batch: 1.491[s] Speed: 42.9[samples/s]
+2025-11-08 14:44:01,138 transreid.train INFO: Epoch 93 done. Time per batch: 1.484[s] Speed: 43.1[samples/s]
+2025-11-08 14:44:26,754 transreid.train INFO: Epoch 94 done. Time per batch: 1.507[s] Speed: 42.5[samples/s]
+2025-11-08 14:44:51,995 transreid.train INFO: Epoch 95 done. Time per batch: 1.485[s] Speed: 43.1[samples/s]
+2025-11-08 14:45:17,043 transreid.train INFO: Epoch 96 done. Time per batch: 1.473[s] Speed: 43.4[samples/s]
+2025-11-08 14:45:42,355 transreid.train INFO: Epoch 97 done. Time per batch: 1.489[s] Speed: 43.0[samples/s]
+2025-11-08 14:46:07,778 transreid.train INFO: Epoch 98 done. Time per batch: 1.495[s] Speed: 42.8[samples/s]
+2025-11-08 14:46:33,173 transreid.train INFO: Epoch 99 done. Time per batch: 1.494[s] Speed: 42.8[samples/s]
+2025-11-08 14:46:58,130 transreid.train INFO: Epoch 100 done. Time per batch: 1.468[s] Speed: 43.6[samples/s]
+The test feature is normalized
+=> Computing DistMat with euclidean_distance
+2025-11-08 14:47:21,777 transreid.train INFO: Validation Results - Epoch: 100
+2025-11-08 14:47:21,777 transreid.train INFO: mAP: 45.1%
+2025-11-08 14:47:21,778 transreid.train INFO: CMC curve, Rank-1  :57.4%
+2025-11-08 14:47:21,778 transreid.train INFO: CMC curve, Rank-5  :66.5%
+2025-11-08 14:47:21,778 transreid.train INFO: CMC curve, Rank-10 :72.2%
