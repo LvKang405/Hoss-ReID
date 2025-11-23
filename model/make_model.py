@@ -252,9 +252,9 @@ __factory_T_type = {
     'vit_base_patch16_224_TransOSS': vit_base_patch16_224_TransOSS,
 }
 
-
+#这个 make_model 是 配置驱动的模型构建工厂函数，核心作用是根据配置文件（cfg）的参数，动态选择并构建 ReID（行人重识别）任务所需的模型 —— 支持两种核心架构（Transformer 或 ResNet），同时接收任务相关的关键参数（类别数、摄像头数），最终返回可直接用于训练 / 验证的模型实例
 def make_model(cfg, num_class, camera_num):
-    if cfg.MODEL.NAME == 'transformer':
+    if cfg.MODEL.NAME == 'transformer':#配置为此
         model = build_transformer(num_class, camera_num, cfg, __factory_T_type)
         print('===========building transformer===========')
     else:
